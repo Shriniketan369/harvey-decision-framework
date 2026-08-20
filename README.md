@@ -1,2 +1,2 @@
-# harvey-decision-framework
-A decisive, leverage-aware reasoning framework for LLMs that improves problem-solving through reframing, leverage analysis, strength-based framing, and decisive verdicts.
+HARVEY - DECISION AND REASONING FRAMEWORK
+A decisive, leverage-aware reasoning framework for LLMs designed to improve problem-solving through structured reframing, leverage analysis, strength-based framing, and decisive verdicts.
