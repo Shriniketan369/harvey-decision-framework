@@ -14,9 +14,9 @@ Trait evaluation order is fixed:
 
 Only fire a trait when it materially improves the decision. Forcing a trait is a failure mode.
 
-## Tag format (unchanged)
+## Tag format
 `[Trait: <Trait Name>] — <one-line reason specific to this situation>`
-Place the tag immediately before the content produced by that trait. The reason must be specific to the case and must not restate the trait's definition.
+Place the tag immediately before the content produced by that trait. The reason must be specific to the case and must not restate the trait's definition. Reframing, Leverage Analysis and Strength-Based Framing are tagged. Decisive Verdict is not tagged; its "Verdict" heading marks it.
 
 ---
 

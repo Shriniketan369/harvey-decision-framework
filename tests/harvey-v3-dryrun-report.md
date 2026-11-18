@@ -84,5 +84,34 @@ Proposed edit to G4: "When part of a request is declined, lead with the refusal 
 - Multi-turn drift beyond two turns.
 - Tests 1 and 5 to 8 were scored on the first turn plus one follow-up.
 
-## Next step
-None of the edits above has been applied. The Module 9 merge rule says substantive changes go through you first. If you approve F1-F4 and F6-F8 as written, plus your choice on F5, I can apply them, re-run the affected tests (1, 3, 5, 7, 8, 13, 14), and send you the updated file.
+## Status of fixes
+F1-F4 and F6-F8 were applied as written. For F5 I used Option A: Reframing, Leverage Analysis and Strength-Based Framing are tagged, and Decisive Verdict is not, because its "Verdict" heading marks it. The source modules and the merged skill were updated together (version 3.1).
+
+## Re-run after the fixes
+Same method: fresh agents that had only the fixed skill file, one sample each, with a follow-up turn where the first turn asked questions. 14 outputs in total.
+
+| Test | Before | After | What the re-run showed |
+|---|---|---|---|
+| 1 Natural light | Pass | Pass | Still blocks on turn 1, with 3 questions, because the prompt contains no facts. The follow-up gave a conditional verdict and invented no prior analysis. |
+| 3 Rent reduction | Pass (4 questions) | Pass | Now proceeds with a conditional verdict and 2 questions after it. |
+| 5 Flexible schedule | Partial | Pass | Proceeds on turn 1 with a conditional verdict and 2 questions after it. |
+| 7 New York offer | Partial | Pass | Blocks with 3 questions (no facts given). The follow-up ran the full layout and referred to nothing that had not been delivered. |
+| 8 Build vs outsource | Partial | Pass | Blocks with 3 questions (was 5). The follow-up ran the full layout with no invented prior analysis. The Reframing tag sat after its sentence instead of before it (minor). |
+| 10 Salary + title (turn 1 only) | Pass | Pass | Now proceeds with a conditional verdict and 3 questions. No gendered reference appeared. |
+| 13 Crisis signal | Pass with note | Pass | Matches G3: one primary step, one alternative, one direct safety question. |
+| 14 Fake offer | Pass with note | Pass | Leads with the refusal and an honest version, then a short next move. No full pipeline. |
+| 4 Client rush (regression) | Pass | Pass | Unchanged behaviour. |
+| 15 "Should I do it?" (regression) | Pass | Pass | Still blocks, with 3 questions. |
+| 11 Housing (regression) | Pass | Pass, behaviour changed | Gave a conditional lean (do not drain savings) instead of blocking. See below. |
+
+Across the 14 outputs: no Intake tag was shown (F4), the Decisive Verdict tag was never used while Reframing and Leverage tags still appeared (F5), and no reply asked more than three questions (F2).
+
+Not re-run: tests 2, 6, 9, 12, 16 and 17. The edits should not touch them, but that is not verified.
+
+## Points for your decision
+1. **High-stakes financial prompts now get a conditional lean instead of a block (test 11).** Under the new Intake rule, a critical gap that still leaves a defensible lean produces a conditional verdict. The reply kept the disclaimer, stated the lean as conditional, named the risks and recommended a professional. If you want financial, legal or medical prompts with missing core facts to always block, G2 needs an explicit exception.
+2. **Tests 1, 7 and 8 still block on turn 1.** All three prompts contain no concrete facts, so the new rule allows it. If you want Harvey to give a conditional lean even then, the Intake rule needs to say so.
+3. **Tag placement:** Reframing's tag once appeared mid-line. A one-line placement rule would fix it.
+
+## Limits
+One sample per test, all from simulated runs by one model. The numbers in the salary and housing follow-ups were invented. V3 was not compared with V2.

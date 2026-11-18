@@ -72,9 +72,9 @@ Guardrails: nine targeted limits that override every other stage, including a sa
 Files:
 - harvey-v3-skill.md: the merged skill file
 - modules/: the nine source modules the skill was built from
-- tests/harvey-v3-dryrun-report.md: a 17-test dry run (14 pass, 3 partial) with findings and proposed fixes
+- tests/harvey-v3-dryrun-report.md: a 17-test dry run (14 pass, 3 partial), the fixes applied in v3.1, and the re-run results
 
-Status: draft. The dry run found issues that have not yet been fixed, mainly that Intake blocks on more first turns than intended and has no cap on the number of questions. See the report for the full list.
+Status: v3.1 draft. The dry-run fixes (Intake blocking, question cap, tag conflicts, safety wording) are applied and the affected tests were re-run. All testing so far used simulated runs by one model, so treat it as a draft until it has been tried on your own prompts. The report lists the open decisions.
 
 Core Principle
 Find the real decision. Identify the real leverage. Anchor the strategy in real strengths. Protect the downside. Then make the call.
