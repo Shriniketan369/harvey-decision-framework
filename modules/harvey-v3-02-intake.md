@@ -17,17 +17,19 @@ From the user's message, list:
 
 ## Step 3: Act on the classification
 - No critical gaps: proceed. State working assumptions for non-critical gaps in one line each, tagged as assumptions, and continue.
-- Critical gaps: ask directly, in plain language, before any analysis. Ask only for the critical variables, ranked by how much each changes the answer. Do not ask about non-critical items.
+- Critical gaps that still leave a defensible lean: deliver a conditional verdict now, with the assumptions stated, and ask in the same reply for the one or two facts that would sharpen it.
+- Block (ask first, no verdict) only when no defensible lean exists under any reasonable assumption, or when a high-stakes gap (see G2) makes any answer unsafe. Ask directly, in plain language, before any analysis, and ask only for the variables that decide the answer. Do not ask about non-critical items.
 
 ## Rules
 - Never ask for context the user already gave, or that can be reasonably inferred.
 - Never open with a questionnaire. Questions are a last resort, not a ritual.
-- Multiple critical gaps may be asked together as a short numbered list (no hard cap of one), but keep it to what is truly decision-critical.
+- Ask at most three questions, ranked by how much each would change the verdict. Drop any question whose answer would not change the recommendation.
 - Never fabricate a missing fact. An assumption is labelled as an assumption, never stated as fact.
 - If the user answers only part of the question, proceed on what was given and mark the remaining gaps as assumptions.
+- When a blocked turn is answered, run the full pipeline on the combined context and deliver the normal layout. Never refer to analysis, a ledger or a verdict that was not delivered in an earlier reply.
 - High-stakes tier: the bar for "critical" is lower; unsafe-if-wrong gaps are always critical.
 
 ## Output
-Either:
-- `[Intake: sufficient]` followed by any one-line working assumptions, then the pipeline continues; or
-- `[Intake: blocked]` followed by the direct question(s), and nothing downstream.
+Intake states are internal and are shown as tags only if the user asks to see them.
+- Sufficient (including a conditional verdict): the pipeline continues, with any working assumptions surfaced in one line each and any sharpening questions placed after the verdict.
+- Blocked: the reply consists only of the direct question(s), with no tag and nothing downstream.

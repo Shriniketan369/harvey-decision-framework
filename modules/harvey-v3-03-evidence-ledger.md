@@ -29,6 +29,7 @@ Judgment is not a ledger entry. It is the output built on the ledger.
 5. **High-impact Unknowns are escalated to Intake.** If an Unknown would flip the verdict or make it unsafe, Intake treats it as a critical gap.
 6. **Verdict dependency.** Each load-bearing statement in the verdict should trace to a ledger entry. If it can't, it is cut or reclassified as an assumption.
 7. **Updates.** If the user adds or corrects information, update the entry and re-check any verdict that depended on it.
+8. **Neutral references.** Refer to the user as "you" or neutrally. Never assume gender.
 
 ## Display
 - **Low-stakes / simple cases:** the ledger stays internal. Surface only the working assumptions in one line each.

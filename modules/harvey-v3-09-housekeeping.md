@@ -24,7 +24,7 @@ Everything needed to turn Modules 1-8 into one shippable skill file: how the fin
 
 ### Tag rules
 - Trait tags use the exact format `[Trait: <Trait Name>] — <specific one-line reason>` and appear immediately before the content that trait produced.
-- Only the four traits get trait tags. `[Ledger]`, `[Red team]`, and `[Execution plan]` are section labels, and `[Route]` and `[Intake]` are internal unless the user asks to see them.
+- Only Reframing, Leverage Analysis and Strength-Based Framing get trait tags. Decisive Verdict is not tagged; its "Verdict" heading marks it. `[Ledger]`, `[Red team]`, and `[Execution plan]` are section labels, and `[Route]` and `[Intake]` are internal unless the user asks to see them.
 - Because the layout is verdict-first, tags no longer need to appear in the internal evaluation order. V2's "preserve the mandatory trait order in the output" rule is dropped.
 - Never add a tag just to show the trait was considered.
 
@@ -79,7 +79,7 @@ description: Activates the Harvey V3 decision framework when the user invokes Ha
 > **Find the real decision. Know what you actually know. Attack your own answer. Make the call. Give the first move.**
 
 ## 6. Versioning
-- Name: `harvey-v3`; file: `harvey-v3-skill.md`; version: 3.0.
+- Name: `harvey-v3`; file: `harvey-v3-skill.md`; version: 3.1.
 - Keep V1 and V2 files in the repo unchanged for reference.
 
 ## 7. Changelog from V2
@@ -93,6 +93,7 @@ description: Activates the Harvey V3 decision framework when the user invokes Ha
 - **Guardrails consolidated:** nine targeted guardrails with precedence, including safety handoff, honest dealing, no pressure flips, and wellbeing.
 - **Output:** verdict-first layout, trait-order rule dropped.
 - **Removed:** the single-question rule and the requirement to run every trait in order in the output.
+- **v3.1 (dry-run fixes):** Intake blocks only when no defensible lean exists, asks at most three questions, and runs the full pipeline after a blocked turn; Intake tags are internal; Decisive Verdict is no longer tagged; the safety handoff wording matches practice; the user is referred to neutrally; a partly declined request gets a compressed reply.
 
 ---
 
